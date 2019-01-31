@@ -1,0 +1,28 @@
+.calculator {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #555555;
+    padding:10px;
+    background-color: #2E2E2E;
+}
+
+.calculator .display-screen {
+    height: 80px;
+    width: auto;
+    background-color: #BBBBBB;
+    border: 1px solid #333333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calculator .keypad {
+    width: inherit;
+    background-color: silver;
+}
+
+.calculator .keypad > div {
+    width: 25%; 
+    height: 75px;
+    display: inline-table;
+    border: 1px solid red;
+}
