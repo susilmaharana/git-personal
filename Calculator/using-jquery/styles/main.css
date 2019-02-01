@@ -5,23 +5,20 @@
 
 .calculator {
     width: 300px;
-    height: 400px;
+    height: 500px;
     background-color: #2E2E2E;
 } 
 
 .calculator .display-container {
     width: inherit;
-    height: 80px;
+    height: 100px;
     background-color: inherit;
 }
 
 .calculator .display-container .display-screen {
     height: 100%;
     background-color: #BBBBBB;
-    margin-bottom: 10px;
     font-family: 'digital-clock-font';
-    position: relative;
-    padding: 5px;
 }
 
 .calculator .display-container .display-screen .calculated-value {
@@ -34,31 +31,49 @@
     font-size: 18px;
     width: inherit;
     text-align: right;
-    bottom: 5px;
 }
 
 .calculator .keypad {
+    height: auto;
     width: inherit;
-    position: relative;
+    margin-top: 2px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.calculator .keypad > div {
+.calculator .keypad .key-row {
+    height: auto;
+    width: inherit;
+}
+
+.calculator .keypad .key-row > div {
     background-color: silver;
-    width: 70px; 
+    width: 73px; 
     height: 70px;
-    display: inline-table;
-    margin: 5px 0 0;
-    -moz-box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    float: left;
+    border: 1px solid #6E6E6E;
+    text-align: center;
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
-.calculator .keypad > div:hover {
-    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+.calculator .keypad .key-row > div:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
-.calculator .keypad > div > span {
+.calculator .keypad .key-row > div > span {
     font-size: 30px;
+    transform: translate(-50%, 50%);
+    position: absolute;
+}
+
+.title {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
